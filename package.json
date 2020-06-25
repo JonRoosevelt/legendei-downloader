@@ -1,14 +1,29 @@
 {
-  "name": "subtitle-downloader",
+  "name": "legendei-downloader",
   "version": "1.0.0",
-  "description": "",
+  "description": "A legendei.to subtitle downloader",
   "main": "index.js",
+  "homepage": "https://github.com/JonRoosevelt/legendei-downloader",
+  "bugs": {
+    "url": "https://github.com/JonRoosevelt/legendei-downloader/issues",
+    "email": "jonathanroosevelt@gmail.com"
+  },
   "scripts": {
     "dev": "node -r esm index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonRoosevelt/legendei-downloader"
+  },
+  "keywords": [
+    "downloader",
+    "script",
+    "subtitle",
+    "videos"
+  ],
+  "author": "Jon Roosevelt jonathanroosevelt@gmail.com",
+  "license": "MIT",
+  "private": false,
   "dependencies": {
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
