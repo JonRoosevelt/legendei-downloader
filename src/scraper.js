@@ -10,8 +10,12 @@ function GetUrl() {
         .usage("Usage: -e <episode>")
         .option('e', { alias: 'episode', describe: 'series name followed by - s and season number, e and episode number. ie. supernatural-s15e13', type: 'string', demandOption: true})
         .argv;
-    const episode = `https://legendei.to/${options.episode}`
-    return episode;
+    try {
+        const episode = `https://legendei.to/${options.episode}`
+        return episode;
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 async function getHTML(url) {
