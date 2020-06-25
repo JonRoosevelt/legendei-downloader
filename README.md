@@ -9,7 +9,7 @@ Go to the folder you want to download the subtitle to
 
 
 ```bash=
-$ npx legendei-downloader <legendei.to_url>
+$ npx legendei-downloader <series-s1e12>
 ```
 
 Example
@@ -17,8 +17,10 @@ Example
 Go to the legendei.to page and grab the url
 ![](https://i.imgur.com/EER5sn5.png)
 
+use only the end of the url
+
 ```bash=
-$ npx legedendei-downloader https://legendei.to/supernatural-s15e13
+$ npx legedendei-downloader -e supernatural-s15e13
 ```
 
 The file will be downloaded
