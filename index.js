@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { DownloadFile, getHTML, getSubtitleLink, GetUrl, GetFileName} = require('./src/scraper');
 
 async function run() {

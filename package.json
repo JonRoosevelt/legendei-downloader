@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "A legendei.to subtitle downloader",
   "main": "index.js",
+  "bin": {
+    "download": "index.js"
+  },
   "homepage": "https://github.com/JonRoosevelt/legendei-downloader",
   "bugs": {
     "url": "https://github.com/JonRoosevelt/legendei-downloader/issues",
