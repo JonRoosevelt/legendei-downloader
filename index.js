@@ -1,4 +1,4 @@
-import { DownloadFile, getHTML, getSubtitleLink, GetUrl, GetFileName } from './lib/scraper';
+import { DownloadFile, getHTML, getSubtitleLink, GetUrl, GetFileName } from './src/scraper';
 
 async function run() {
     try {
