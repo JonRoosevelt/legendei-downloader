@@ -1,12 +1,17 @@
-import axios from 'axios';
-import cheerio from 'cheerio';
-import https from 'https';
-import fs from 'fs';
+const axios = require('axios');
+const cheerio = require('cheerio');
+const https = require('https');
+const fs = require('fs');
+const yargs = require('yargs');
 
 
 function GetUrl() {
-    const url = process.argv[2]
-    return url;
+    const options = yargs
+        .usage("Usage: -e <episode>")
+        .option('e', { alias: 'episode', describe: 'series name followed by - s and season number, e and episode number. ie. supernatural-s15e13', type: 'string', demandOption: true})
+        .argv;
+    const episode = `https://legendei.to/${options.episode}`
+    return episode;
 }
 
 async function getHTML(url) {
@@ -34,4 +39,4 @@ async function DownloadFile(link, fileName) {
 
 
 
-export { DownloadFile, getHTML, getSubtitleLink, GetUrl, GetFileName };
+module.exports = { DownloadFile, getHTML, getSubtitleLink, GetUrl, GetFileName };

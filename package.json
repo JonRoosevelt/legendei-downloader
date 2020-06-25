@@ -8,9 +8,6 @@
     "url": "https://github.com/JonRoosevelt/legendei-downloader/issues",
     "email": "jonathanroosevelt@gmail.com"
   },
-  "scripts": {
-    "dev": "node -r esm index.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/JonRoosevelt/legendei-downloader"
@@ -27,6 +24,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
-    "esm": "^3.2.25"
+    "esm": "^3.2.25",
+    "yargs": "^15.3.1"
   }
 }

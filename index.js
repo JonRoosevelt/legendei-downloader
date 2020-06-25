@@ -1,4 +1,4 @@
-import { DownloadFile, getHTML, getSubtitleLink, GetUrl, GetFileName } from './src/scraper';
+const { DownloadFile, getHTML, getSubtitleLink, GetUrl, GetFileName} = require('./src/scraper');
 
 async function run() {
     try {
