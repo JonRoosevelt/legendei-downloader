@@ -28,7 +28,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.3",
     "esm": "^3.2.25",
     "yargs": "^15.3.1"
